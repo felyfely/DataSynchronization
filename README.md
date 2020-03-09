@@ -3,7 +3,7 @@ A generic data layer
 
 ## Installation
 
-MiniGalleryUI is available through [Carthage](https://github.com/Carthage/Carthage). To install
+DataSynchronization is available through [Carthage](https://github.com/Carthage/Carthage). To install
 it, simply add the following line to your Cartfile:
 
 ```ruby
