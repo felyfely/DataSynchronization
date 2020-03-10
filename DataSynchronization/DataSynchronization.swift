@@ -38,7 +38,9 @@ public extension DataRequestable {
             return
         }
         let requestUrl = baseUrl.appendingPathComponent(path)
-        URLSession.shared.dataTask(with: requestUrl) { (data, _, error) in
+        var request = URLRequest.init(url: requestUrl)
+        request.httpMethod = method.rawValue
+        URLSession.shared.dataTask(with: request) { (data, _, error) in
             if let data = data {
                 do {
                     // Convert the data to JSON
